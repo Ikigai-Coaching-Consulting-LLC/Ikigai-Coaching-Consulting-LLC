@@ -2,6 +2,7 @@ import React from "react"
 import { Section } from "../components/Section/Section";
 import { Wrapper } from "../components/Wrapper/Wrapper.style";
 import { ChatBot } from "../components/ChatBot/ChatBot";
+import { ContactForm } from "../components/ContactForm/ContactForm";
 
 const Home = () => {
 
@@ -9,6 +10,7 @@ const Home = () => {
     <Wrapper>
       <h1>Home Page</h1>
       <Section />
+      <ContactForm />
       <ChatBot />
     </Wrapper>
   )
