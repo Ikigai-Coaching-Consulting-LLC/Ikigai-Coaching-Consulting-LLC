@@ -13,7 +13,6 @@ const Navbar = () => {
 
     return (
         <Wrapper>
-            
             <Header>
                 <Icon src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/qp8rxi2jae4uinry2dv7"/>
                 <Title>Ikigai Coaching & Consulting, LLC</Title>

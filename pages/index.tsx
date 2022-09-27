@@ -1,8 +1,11 @@
 import React from "react"
 import Navbar from "../Components/Navbar"
-import { Section } from "../components/Section/Section";
-import { Wrapper } from "../components/Wrapper/Wrapper.style";
-import { ChatBot } from "../components/ChatBot/ChatBot";
+import { Section } from "../Components/Section/Section";
+import { ChatBot } from "../Components/ChatBot/ChatBot";
+
+//Styling
+import { Wrapper } from "../styles/Home.styles";
+
 
 
 const Home = () => {
@@ -15,6 +18,7 @@ const Home = () => {
       <Section />
       <ChatBot />
     </Wrapper>
+
   )
 
 }
