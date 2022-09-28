@@ -14,21 +14,21 @@ interface TypesOfCourse {
 const onlineCourseData:OnlineCourses = data.onlineCourses;
 const typesOfCourses:TypesOfCourse[] = data.onlineCourses.typesOfCourses;
 
-const Courses = () => {
+const CoursesPage = () => {
     return (
         <>
             <h1>Online Courses</h1>
             <h2>{onlineCourseData.header}</h2>
             <h3>{onlineCourseData.subHeader}</h3>
-            <div>{typesOfCourses.map((object, index) => {
+            {typesOfCourses.map((object, index) => {
                 return (
                     <div key={index}> {object.course}:
                         <p>{object.description}</p>
                     </div>
                 )
-            })}</div>
+            })}
         </>
     )
 }
 
-export default Courses;
+export default CoursesPage;
