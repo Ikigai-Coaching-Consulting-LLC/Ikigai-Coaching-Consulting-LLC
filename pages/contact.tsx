@@ -1,4 +1,6 @@
 import data from "../content.json";
+import { Wrapper } from "../styles/Home.styles";
+import { Section } from "../Components/Section/Section";
 import { ContactForm } from "../Components/ContactForm/ContactForm";
 
 interface Contact {
@@ -9,11 +11,11 @@ const contactData:Contact = data.contact;
 
 const ContactPage = () => {
     return (
-        <>
-            <h1>Contact Me</h1>
-            <h2>{contactData.header}</h2>
-            <ContactForm />
-        </>
+        <Wrapper>
+            <Section header={contactData.header}>
+                <ContactForm />
+            </Section>
+        </Wrapper>
     )
 }
 

@@ -1,5 +1,4 @@
 import React from "react"
-import { Section } from "../Components/Section/Section";
 import { ChatBot } from "../Components/ChatBot/ChatBot";
 import Navbar from "../Components/Navbar"
 
@@ -13,7 +12,6 @@ const Home = () => {
     <Wrapper>
       <Navbar />
       <h1>Home Page</h1>
-      <Section />
       <ChatBot />
     </Wrapper>
 

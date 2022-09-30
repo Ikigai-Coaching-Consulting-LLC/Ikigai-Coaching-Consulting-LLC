@@ -1,4 +1,6 @@
 import data from "../content.json";
+import { Wrapper } from "../styles/Home.styles";
+import { Section } from "../Components/Section/Section";
 
 interface Workshops {
     header: string
@@ -10,14 +12,10 @@ const workshopData:Workshops = data.workshops;
 
 const WorkshopPage = () => {
     return (
-        <>
+        <Wrapper>
             <h1>Workshops</h1>
-            <h2>{workshopData.header}</h2>
-            <h3>{workshopData.subHeader}</h3>
-            {workshopData.typesOfWorkshops.map((workshop, index) => {
-                return <div key={index}>{workshop}</div>
-            })}
-        </>
+            <Section header={workshopData.header} subHeader={workshopData.subHeader} typesOfWorkshops={workshopData.typesOfWorkshops}/>
+        </Wrapper>
     )
 }
 
