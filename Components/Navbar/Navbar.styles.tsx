@@ -8,6 +8,7 @@ export const Wrapper = styled.div `
     grid-auto-flow: column;
     padding: 10px 20px;
     border-bottom: solid gray .5px;
+    color: black;
 
 `
 
@@ -21,7 +22,6 @@ export const Header = styled.div `
 `
 
 export const Icon = styled.img ` 
-    
     height: 100px;
     width: 100px;
     border-radius: 25px;
@@ -42,7 +42,6 @@ export const Content = styled.div `
     justify-content: end;
     justify-items: end;
     align-items: center;
-    
 
 `
 
@@ -58,7 +57,6 @@ export const BottomNav = styled.div `
 export const NavLink = styled.button ` 
     border: none;
     background-color: transparent;
-    color: gray;
     text-transform: capitalize;
     margin: 0 10px;
     font-size: 18px;
