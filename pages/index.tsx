@@ -10,7 +10,6 @@ const Home = () => {
       
     <Wrapper>
       <Section></Section>
-      
     </Wrapper>
 
   )
