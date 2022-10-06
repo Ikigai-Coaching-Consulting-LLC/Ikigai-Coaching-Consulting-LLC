@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import HeroImage from "./HeroImage";
 import { ChatBot } from "./ChatBot/ChatBot";
+import Footer from "./Footer";
 
 export default function({ children }: any)  {
 
@@ -10,6 +11,7 @@ export default function({ children }: any)  {
             <HeroImage />
             <main>{children}</main>
             <ChatBot />
+            <Footer />
         </>
    
     )
