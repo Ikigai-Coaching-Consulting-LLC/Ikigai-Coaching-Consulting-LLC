@@ -17,6 +17,24 @@ const Footer = () => {
                 <Title>Ikigai Coaching & Consulting, LLC</Title>
             </Header>
             <Content>
+                <NavLink onClick={()=> handleRouting('/about')}>
+                    About
+                </NavLink>
+                <NavLink onClick={()=> handleRouting('/testimonials')}>
+                    Testimonials
+                </NavLink>
+                <NavLink onClick={()=> handleRouting('/contact')}>
+                    Contact Us
+                </NavLink>
+                <NavLink  onClick={()=> handleRouting('/coaching')}>
+                    Career Coaching
+                </NavLink>
+                <NavLink onClick={()=> handleRouting('/workshops')}>
+                    Workshops
+                </NavLink>
+                <NavLink onClick={()=> handleRouting('/courses')}>
+                    Online Courses
+                </NavLink>
             </Content>
         </Wrapper>
     )

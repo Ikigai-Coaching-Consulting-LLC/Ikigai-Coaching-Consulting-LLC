@@ -30,7 +30,7 @@ const Navbar = () => {
                     </NavLink>
                 </TopNav>
                 <BottomNav>
-                    <NavLink className="big" onClick={()=> handleRouting('/coaching')}>
+                    <NavLink onClick={()=> handleRouting('/coaching')}>
                         Career Coaching
                     </NavLink>
                     <NavLink onClick={()=> handleRouting('/workshops')}>
