@@ -17,3 +17,8 @@ export const Content = styled.div `
 
 
 `
+
+export const List = styled.ul ` 
+
+
+`
