@@ -7,7 +7,7 @@ const Navbar = () => {
 
     const router = useRouter()
 
-    const handleRouting = (route) => {
+    const handleRouting = (route:string) => {
         router.push(route)
     } 
 

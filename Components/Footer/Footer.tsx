@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 import { Wrapper, Header, Icon, Title, Content, TopNav, BottomNav, NavLink } from './Footer.styles'
 
-const Navbar = () => {
+const Footer = () => {
 
     const router = useRouter()
 
@@ -22,4 +22,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Footer
