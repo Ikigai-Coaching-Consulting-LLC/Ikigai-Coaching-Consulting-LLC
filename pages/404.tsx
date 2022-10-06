@@ -3,16 +3,16 @@ import { Section } from "../Components/Section/Section";
 //Styling
 import { Wrapper } from "../styles/Home.styles";
 
-const Home = () => {
+const Notfound = () => {
 
   return (
       
     <Wrapper>
-      <Section></Section>
+      <h1>Opps... this page was not found</h1>
     </Wrapper>
 
   )
 
 }
 
-export default Home
+export default Notfound
