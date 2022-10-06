@@ -6,6 +6,7 @@ import Testimonials from "../Components/Testimonials";
 
 //Styling
 import { Wrapper } from "../styles/Home.styles";
+import Footer from "../Components/Footer";
 
 
 const Home = () => {
