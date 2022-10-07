@@ -1,4 +1,6 @@
 import data from "../content.json";
+import { Wrapper } from "../styles/Home.styles";
+import { Section } from "../Components/Section/Section";
 
 interface OnlineCourses {
     header: string
@@ -16,18 +18,10 @@ const typesOfCourses:TypesOfCourse[] = data.onlineCourses.typesOfCourses;
 
 const CoursesPage = () => {
     return (
-        <>
+        <Wrapper>
             <h1>Online Courses</h1>
-            <h2>{onlineCourseData.header}</h2>
-            <h3>{onlineCourseData.subHeader}</h3>
-            {typesOfCourses.map((object, index) => {
-                return (
-                    <div key={index}> {object.course}:
-                        <p>{object.description}</p>
-                    </div>
-                )
-            })}
-        </>
+            <Section header={onlineCourseData.header} subHeader={onlineCourseData.subHeader} typesOfCourses={typesOfCourses}/>
+        </Wrapper>
     )
 }
 
