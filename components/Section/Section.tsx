@@ -1,4 +1,4 @@
-import { Card, Grid, Wrapper } from "./Section.styles";
+import { Card, CardTitle, CardBody, Wrapper, Grid } from "./Section.styles";
 
 interface SectionProps {
     header?: string,
@@ -14,6 +14,7 @@ export const Section = (props: SectionProps) => {
     return (
         <Wrapper>
             <h1>{props.header}</h1>
+            <Grid>
             {data?.map((object:any, index:any) => {
                 if(typeof object === 'string'){
                     return(
@@ -22,13 +23,13 @@ export const Section = (props: SectionProps) => {
                     )
                 }
                 return (
-                    <Grid>
-                        <Card key={index}>{object.course}:
-                            {object.description}
-                        </Card>
-                    </Grid>
+                    <Card key={index}>
+                        <CardTitle>{object.course}:</CardTitle>
+                        <CardBody>{object.description}</CardBody>
+                    </Card>
                 )
             })}
+            </Grid>
             {props.children && <>{props.children}</>}
         </Wrapper>
     )

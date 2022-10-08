@@ -6,13 +6,24 @@ export const Wrapper = styled.div `
 
 `
 export const Card = styled.div ` 
-    width: 400px;
+    width: 450px;
     border: solid 1px black;
+    padding: 20px 30px;
+    border-radius:25px;
+    margin: 10px auto;
+`
+export const CardTitle = styled.h2 ` 
+
 
 `
 
-export const Grid = styled.div` 
+export const CardBody = styled.p ` 
+
+
+`
+
+export const Grid = styled.div ` 
     display: grid;
-    justify-content: space-around;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
 `

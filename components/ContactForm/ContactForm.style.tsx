@@ -33,3 +33,8 @@ export const Dropdown = styled.select `
 
 
 `
+
+export const Option = styled.option ` 
+
+
+`
