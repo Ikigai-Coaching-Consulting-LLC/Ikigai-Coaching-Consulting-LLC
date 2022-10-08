@@ -4,6 +4,9 @@ export const Wrapper = styled.div `
     width: 100%;
     height: 200px;
     background-color: transparent;
+    position:absolute;
+    top: 0;
+    left:0;
     display: grid;
     grid-auto-flow: column;
     padding: 10px 20px;
