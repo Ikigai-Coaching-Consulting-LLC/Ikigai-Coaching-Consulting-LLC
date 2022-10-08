@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div ` 
     padding: 10px 20px;
+    height: 80vh
 
 `
 export const Card = styled.div ` 

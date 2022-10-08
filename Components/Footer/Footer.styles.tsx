@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Link from 'react'
 
 export const Wrapper = styled.div ` 
     width: 100%;
@@ -55,7 +56,7 @@ export const BottomNav = styled.div `
     font-size: 36px;
 `
 
-export const NavLink = styled.button ` 
+export const NavLink = styled.button` 
     border: none;
     background-color: transparent;
     color: gray;

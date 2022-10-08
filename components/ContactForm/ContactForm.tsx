@@ -23,7 +23,7 @@ export const ContactForm = () => {
             <TextInput type="email" placeholder="Email" name="email" required/>
             <textarea placeholder="Your Message to Christy" name="message" required/>
             <Label htmlFor="question_one">I am actively job hunting.</Label>
-            <CheckboxInput type="checkbox" id="question_one" name="question_one_answer" required checked/>          
+            <CheckboxInput type="checkbox" id="question_one" name="question_one_answer" required defaultChecked/>          
             <Label htmlFor="question_two">I am looking for help with...</Label>
             <Dropdown id="question_two" name="question_two_answer" required>
                 <option value='Network Strategy'>

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.div ` 
     width: 100%;
     height: 200px;
-    background-color: transparent;
+    background: linear-gradient(45deg, transparent 24%, #E5E4E2 163.7%);
     position:absolute;
     top: 0;
     left:0;
@@ -16,9 +16,12 @@ export const Wrapper = styled.div `
 `
 
 export const Header = styled.div `
-    position: absolute;
-    left: 10px; 
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
     display: grid;
+    margin-top: 20px;
+    margin-left: 10px;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -27,9 +30,9 @@ export const Header = styled.div `
 export const Icon = styled.img ` 
     height: 100px;
     width: 100px;
+    padding: 10px 20px;
     border-radius: 25px;
-    align-self: start;
-
+    cursor: pointer;
 `
 
 export const Title = styled.h2 ` 
@@ -37,9 +40,6 @@ export const Title = styled.h2 `
 
 `
 export const Content = styled.div `
-    position : absolute;
-    right: 10px;
-    width: 100%;
     margin: 0 20px;
     display: grid;
     justify-content: end;
@@ -61,7 +61,7 @@ export const NavLink = styled.button `
     border: none;
     background-color: transparent;
     text-transform: capitalize;
-    margin: 0 10px;
+    margin: 0 20px;
     font-size: 18px;
     
     :hover {

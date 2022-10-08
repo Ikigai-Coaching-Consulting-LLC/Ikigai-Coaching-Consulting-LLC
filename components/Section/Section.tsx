@@ -14,22 +14,24 @@ export const Section = (props: SectionProps) => {
     return (
         <Wrapper>
             <h1>{props.header}</h1>
-            <Grid>
-            {data?.map((object:any, index:any) => {
-                if(typeof object === 'string'){
-                    return(
-                        <div key={index}>{object}
-                        </div>
-                    )
-                }
-                return (
-                    <Card key={index}>
-                        <CardTitle>{object.course}:</CardTitle>
-                        <CardBody>{object.description}</CardBody>
-                    </Card>
-                )
-            })}
-            </Grid>
+            {data?.length &&
+                <Grid>
+                    {data?.map((object:any, index:any) => {
+                        if(typeof object === 'string'){
+                            return(
+                                <div key={index}>{object}
+                                </div>
+                            )
+                        }
+                        return (
+                            <Card key={index}>
+                                <CardTitle>{object.course}:</CardTitle>
+                                <CardBody>{object.description}</CardBody>
+                            </Card>
+                        )
+                    })}
+                </Grid>
+            }   
             {props.children && <>{props.children}</>}
         </Wrapper>
     )

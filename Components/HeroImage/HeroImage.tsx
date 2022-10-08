@@ -1,15 +1,16 @@
 
-import { Wrapper } from './HeroImage.styles'
+import { Wrapper, Image } from './HeroImage.styles'
 
-const HeroImage = () => {
+export interface HeroImageProps {
+    background?: string
+    image?: string
+}
 
-
+const HeroImage = (props:HeroImageProps) => {
     return (
-
-        <Wrapper >
-
+        <Wrapper background={props.background}>
+            <Image src={props.image} /> ;
         </Wrapper>
-
     )
 }
 

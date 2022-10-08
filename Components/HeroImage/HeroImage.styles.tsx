@@ -1,10 +1,20 @@
 import styled from "styled-components";
-import * as style from '../../styles/GlobalVariables.styles'
 
-export const Wrapper = styled.div ` 
+export interface Props {
+    background?: string
+}
+
+export const Wrapper = styled.div<Props> ` 
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     border: '1px solid black';
-    background-color: gray;
+    background: url(${(props:Props) => props.background ? props.background : ''}), lightgrey;
+    background-size:cover;
+    background-position: center;
     padding: 10px 20px;
 `;
+
+export const Image = styled.img` 
+
+
+`
