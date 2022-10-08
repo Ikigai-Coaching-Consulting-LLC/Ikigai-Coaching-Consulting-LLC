@@ -3,12 +3,8 @@ import * as style from '../../styles/GlobalVariables.styles'
 
 export const Wrapper = styled.div ` 
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     border: '1px solid black';
     background-color: gray;
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: -1;
-
+    padding: 10px 20px;
 `;

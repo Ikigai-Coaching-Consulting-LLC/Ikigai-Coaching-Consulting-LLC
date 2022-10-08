@@ -1,3 +1,4 @@
+import { Section } from "../Components/Section/Section"
 import data from "../content.json"
 // import bio_image from '../Components/Images/HeadshotTall.jpg'
 
@@ -8,12 +9,8 @@ const AboutPage = () => {
     
     return (
 
-        <Wrapper>
-            <Header>{bio.header}</Header>
-            <Content>
-                <p>{bio.content}</p>
-            </Content>
-        </Wrapper>  
+        <Section header={bio.header} typesOf={[bio.content]}>
+        </Section>  
     ) 
 }
 

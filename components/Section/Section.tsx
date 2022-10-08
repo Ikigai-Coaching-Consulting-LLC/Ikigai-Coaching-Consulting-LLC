@@ -3,8 +3,7 @@ import React from "react";
 interface SectionProps {
     header?: string,
     subHeader?: string,
-    typesOfCourses?: TypesOf[],
-    typesOfWorkshops?: string[],
+    typesOf?: any[],
     children?: React.ReactNode
 }
 
@@ -14,18 +13,23 @@ interface TypesOf {
 }
 
 export const Section = (props: SectionProps) => {
+
+    const data = props.typesOf
     return (
         <>
             <h1>{props.header}</h1>
-            {props.typesOfCourses?.map((object, index) => {
+            {data?.map((object, index) => {
+                if(typeof object === 'string'){
+                    return(
+                        <div key={index}>{object}
+                        </div>
+                    )
+                }
                 return (
                     <div key={index}>{object.course}:
                         {object.description}
                     </div>
                 )
-            })}
-            {props.typesOfWorkshops?.map((workshop, index) => {
-                return <div key={index}>{workshop}</div>
             })}
             {props.children && <>{props.children}</>}
         </>
