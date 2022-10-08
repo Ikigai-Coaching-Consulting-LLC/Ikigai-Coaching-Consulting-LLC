@@ -1,11 +1,11 @@
-import Layout from '../Components/BaseLayout'
+import BaseLayout from '../Components/BaseLayout/BaseLayout'
 
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <BaseLayout>
       <Component {...pageProps} />
-    </Layout>
+    </BaseLayout>
   )
 }
 

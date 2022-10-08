@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.div ` 
     width: 100%;
     height: 200px;
-    background: linear-gradient(97deg, rgba(229, 228, 226, .3) 45.6%, rgba(229, 228, 226, .6) 50.7%);
+    color: white;
     position:absolute;
     top: 0;
     left:0;
@@ -49,21 +49,32 @@ export const Content = styled.div `
 
 export const TopNav = styled.div ` 
     font-size: 24px;
+    button {
+        color: rgb(200, 200, 200); 
+    }
 
 `
 
 export const BottomNav = styled.div `
     font-size: 36px;
+
+    button {
+        color: rgb(230, 230, 230); 
+        :hover {
+            border-bottom: solid 2px lightgray;
+        }
+    }
 `
 
-export const NavLink = styled.button ` 
+export const NavLink = styled.button `
     border: none;
     background-color: transparent;
     text-transform: capitalize;
     margin: 0 20px;
     font-size: 18px;
+    text-decoration: none;
     
     :hover {
-        color: lightgray;
+        color: black
     }
 `

@@ -1,21 +1,25 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-import Navbar from "./Navbar";
-import HeroImage from "./HeroImage";
-import { ChatBot } from "./ChatBot/ChatBot";
-import Footer from "./Footer";
-import { NavLink } from "./Footer/Footer.styles";
+import Navbar from "../Navbar";
+import HeroImage from "../HeroImage";
+import { ChatBot } from "../ChatBot/ChatBot";
+import Footer from "../Footer";
+import { NavLink } from "../Footer/Footer.styles";
+import { Section } from "../Section/Section";
 
-export default function({ children }: any)  {
+const BaseLayout = ({ children }: any) => {
     const [ background, setBackground ] = useState('');
     const [ NotFound, setNotFound ] = useState(false)
+
     const router = useRouter()
     const currentRoute = router.pathname
+
     useEffect(()=> {
-        settingBackground()
+        settingBackground(currentRoute)
     }, [currentRoute])
-    const settingBackground = () => {
+
+    const settingBackground = (currentRoute:string) => {
         switch(currentRoute) {
             case "/":
                 setNotFound(false)
@@ -45,15 +49,14 @@ export default function({ children }: any)  {
             break;
         }
     }
-    console.log(currentRoute)
 
     return(
         NotFound ? 
-            <>
+            <Section>
                 <main>{children}
                 </main>
                 <NavLink onClick={() => router.push('/')}>Home</NavLink>
-            </>
+            </Section>
             :
             <div style={{position: "absolute", left:'0', top:'0', width: '100%', overflow:'hidden'}}> 
                 <Navbar />
@@ -66,4 +69,6 @@ export default function({ children }: any)  {
    
     )
 }
+
+export default BaseLayout
    
