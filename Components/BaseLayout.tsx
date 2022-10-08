@@ -6,7 +6,7 @@ import Footer from "./Footer";
 export default function({ children }: any)  {
 
     return(
-        <div style={{position: "absolute", left:'0', top:'0'}}> 
+        <div style={{position: "absolute", left:'0', top:'0', width: '100%', overflow:'hidden'}}> 
             <Navbar />
             <HeroImage />
             <main>{children}</main>

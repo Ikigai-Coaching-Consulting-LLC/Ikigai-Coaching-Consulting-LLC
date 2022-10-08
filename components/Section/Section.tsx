@@ -1,4 +1,4 @@
-import React from "react";
+import { Card, Grid, Wrapper } from "./Section.styles";
 
 interface SectionProps {
     header?: string,
@@ -7,18 +7,14 @@ interface SectionProps {
     children?: React.ReactNode
 }
 
-interface TypesOf {
-    course?: string,
-    description?: string
-}
 
 export const Section = (props: SectionProps) => {
 
     const data = props.typesOf
     return (
-        <>
+        <Wrapper>
             <h1>{props.header}</h1>
-            {data?.map((object, index) => {
+            {data?.map((object:any, index:any) => {
                 if(typeof object === 'string'){
                     return(
                         <div key={index}>{object}
@@ -26,12 +22,14 @@ export const Section = (props: SectionProps) => {
                     )
                 }
                 return (
-                    <div key={index}>{object.course}:
-                        {object.description}
-                    </div>
+                    <Grid>
+                        <Card key={index}>{object.course}:
+                            {object.description}
+                        </Card>
+                    </Grid>
                 )
             })}
             {props.children && <>{props.children}</>}
-        </>
+        </Wrapper>
     )
 }
