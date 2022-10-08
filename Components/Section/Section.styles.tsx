@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 
 export const Wrapper = styled.div ` 
+    display: grid;
     padding: 10px 20px;
-    height: 80vh
+    min-height: 80vh;
+    justify-items: center;
+    align-items: center;
 
 `
 export const Card = styled.div ` 

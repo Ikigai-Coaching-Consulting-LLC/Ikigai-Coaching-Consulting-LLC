@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.div ` 
     width: 100%;
     height: 200px;
-    background: linear-gradient(45deg, transparent 24%, #E5E4E2 163.7%);
+    background: linear-gradient(97deg, rgba(229, 228, 226, .3) 45.6%, rgba(229, 228, 226, .6) 50.7%);
     position:absolute;
     top: 0;
     left:0;
@@ -11,7 +11,6 @@ export const Wrapper = styled.div `
     grid-auto-flow: column;
     padding: 10px 20px;
     border-bottom: solid gray .5px;
-    color: black;
 
 `
 
