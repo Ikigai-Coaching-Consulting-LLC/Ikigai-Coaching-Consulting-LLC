@@ -14,8 +14,8 @@ const CareerCoaching = () => {
                     <Content key={index}>
                         <h3>{data.coaching}</h3>
                         <List>
-                        {data.topicsCovered.map(topic => 
-                            <li>{topic}</li>
+                        {data.topicsCovered.map((topic, index) => 
+                            <li key={index}>{topic}</li>
                         )}
                         </List>
                     </Content>

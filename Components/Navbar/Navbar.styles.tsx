@@ -39,7 +39,7 @@ export const Title = styled.h2 `
 
 `
 export const Content = styled.div `
-    margin: 0 20px;
+    margin: 0 50px;
     display: grid;
     justify-content: end;
     justify-items: end;
@@ -50,7 +50,10 @@ export const Content = styled.div `
 export const TopNav = styled.div ` 
     font-size: 24px;
     button {
-        color: rgb(200, 200, 200); 
+        color: rgb(157, 157, 157);
+        :hover {
+            color: rgb(100, 100, 100);
+        }
     }
 
 `
@@ -59,8 +62,11 @@ export const BottomNav = styled.div `
     font-size: 36px;
 
     button {
+        height: 100px;
         color: rgb(230, 230, 230); 
+       
         :hover {
+            color: rgb(157, 157, 157);
             border-bottom: solid 2px lightgray;
         }
     }
