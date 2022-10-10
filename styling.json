@@ -1,0 +1,29 @@
+{
+    "background": [
+            {
+                "key": "/",
+                "URL": "/Components/Images/background/bookshelf.jpg"
+            },
+            {    
+                "key": "/about" ,
+                "URL":"https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-teacher-s-college-classroom-coaching-course-poster-background-image_188494.jpg"
+            },
+            {    
+                "key": "/coaching" ,
+                "URL":"https://static.vecteezy.com/system/resources/previews/005/283/059/original/business-training-concept-in-flat-cartoon-design-coach-making-educational-lecture-or-master-class-employees-improve-their-professional-qualities-illustration-with-people-scene-background-vector.jpg"
+            },
+            {    
+                "key": "/workshops" ,
+                "URL":"https://png.pngtree.com/thumb_back/fh260/background/20220427/pngtree-self-management-life-coaching-development-image_1091854.jpg"
+            },
+            {    
+                "key": "/courses" ,
+                "URL":"https://images.squarespace-cdn.com/content/v1/5582e684e4b077043cc7b379/70691af7-e5d0-4923-8885-db3eb7ce087c/The+Increasing+Value+of+Professional+Certifications.jpg?format=1000w"
+            },
+            {    
+                "key": "/contact" ,
+                "URL":"https://c1.wallpaperflare.com/preview/551/930/440/contact-us-contact-call-us-phone-communication.jpg"
+            }
+    ]
+    
+}

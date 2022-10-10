@@ -14,34 +14,48 @@ const BaseLayout = ({ children }: any) => {
 
     const router = useRouter()
     const currentRoute = router.pathname
-
     useEffect(()=> {
         settingBackground(currentRoute)
     }, [currentRoute])
+    console.log('state', background)
 
     const settingBackground = (currentRoute:string) => {
+        let image
         switch(currentRoute) {
             case "/":
+                image = require('../Images/background/workspace.jpg')
                 setNotFound(false)
-                setBackground("http://constructionblog.autodesk.com/wp-content/uploads/2020/04/construction-zoom-background-9.jpg");      
+                setBackground(image.default.src);      
             break;
             case "/about":
-                setBackground("https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-teacher-s-college-classroom-coaching-course-poster-background-image_188494.jpg");      
+                image = require('../Images/background/passion.jpg')
+                setNotFound(false)
+                setBackground(image.default.src);     
             break;
             case "/testimonial":
-                setBackground("http://constructionblog.autodesk.com/wp-content/uploads/2020/04/construction-zoom-background-9.jpg");      
+                image = require('../Images/background/codingDeskImage.jpg')
+                setNotFound(false)
+                setBackground(image.default.src);    
             break;
             case "/contact":
-                setBackground("http://constructionblog.autodesk.com/wp-content/uploads/2020/04/construction-zoom-background-9.jpg");      
+                image = require('../Images/background/contactMe.jpg')
+                setNotFound(false)
+                setBackground(image.default.src);     
             break;
             case "/coaching":
-                setBackground("http://constructionblog.autodesk.com/wp-content/uploads/2020/04/construction-zoom-background-9.jpg");      
+                image = require('../Images/background/workingOnComputer.jpg')
+                setNotFound(false)
+                setBackground(image.default.src);     
             break;
             case "/workshops":
-                setBackground("http://constructionblog.autodesk.com/wp-content/uploads/2020/04/construction-zoom-background-9.jpg");      
+                image = require('../Images/background/groupWorkspace.jpg')
+                setNotFound(false)
+                setBackground(image.default.src);     
             break;
             case "/courses":
-                setBackground("http://constructionblog.autodesk.com/wp-content/uploads/2020/04/construction-zoom-background-9.jpg");      
+                image = require('../Images/background/bookshelf.jpg')
+                setNotFound(false)
+                setBackground(image.default.src);     
             break;
             case "/404":
                 setBackground('')
