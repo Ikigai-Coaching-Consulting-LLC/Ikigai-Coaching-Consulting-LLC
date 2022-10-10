@@ -13,7 +13,7 @@ const workshopData:Workshops = data.workshops;
 const WorkshopPage = () => {
     return (
         <Wrapper>
-            <Section header={workshopData.header} subHeader={workshopData.subHeader} typesOf={workshopData.typesOfWorkshops}/>
+            <Section subHeader={workshopData.subHeader} typesOf={workshopData.typesOfWorkshops}/>
         </Wrapper>
     )
 }

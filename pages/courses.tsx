@@ -19,7 +19,7 @@ const typesOfCourses:TypesOfCourse[] = data.onlineCourses.typesOfCourses;
 const CoursesPage = () => {
     return (
         <Wrapper>
-            <Section header={onlineCourseData.header} subHeader={onlineCourseData.subHeader} typesOf={typesOfCourses}/>
+            <Section subHeader={onlineCourseData.subHeader} typesOf={typesOfCourses}/>
         </Wrapper>
     )
 }

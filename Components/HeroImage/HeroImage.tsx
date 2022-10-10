@@ -9,8 +9,7 @@ export interface HeroImageProps {
 const HeroImage = (props:HeroImageProps) => {
     return (
         <Wrapper background={props.background}>
-            <Title></Title>
-            
+            <Title>{props.title}</Title>
         </Wrapper>
     )
 }

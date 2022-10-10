@@ -8,7 +8,6 @@ const coach = data.careerCoaching;
 const CareerCoaching = () => {
     return (
         <Wrapper>
-            <Header>{coach.header}</Header>
             <h3>{coach.subHeader}</h3>
             {coach.typesOfCoaching.map((data , index) => {
                 return (

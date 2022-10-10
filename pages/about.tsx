@@ -9,7 +9,7 @@ const AboutPage = () => {
     
     return (
 
-        <Section header={bio.header}>
+        <Section>
             <Content>
                 {bio.content}
             </Content>

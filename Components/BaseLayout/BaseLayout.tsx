@@ -7,17 +7,17 @@ import { ChatBot } from "../ChatBot/ChatBot";
 import Footer from "../Footer";
 import { NavLink } from "../Footer/Footer.styles";
 import { Section } from "../Section/Section";
+import data from "../../content.json"
 
 const BaseLayout = ({ children }: any) => {
     const [ background, setBackground ] = useState('');
     const [ NotFound, setNotFound ] = useState(false)
-
+    const [ headline, setHeadline ] =useState('')
     const router = useRouter()
     const currentRoute = router.pathname
     useEffect(()=> {
         settingBackground(currentRoute)
     }, [currentRoute])
-    console.log('state', background)
 
     const settingBackground = (currentRoute:string) => {
         let image
@@ -29,6 +29,7 @@ const BaseLayout = ({ children }: any) => {
             break;
             case "/about":
                 image = require('../Images/background/passion.jpg')
+                setHeadline(data.bio.header)
                 setNotFound(false)
                 setBackground(image.default.src);     
             break;
@@ -39,21 +40,25 @@ const BaseLayout = ({ children }: any) => {
             break;
             case "/contact":
                 image = require('../Images/background/contactMe.jpg')
+                setHeadline(data.contact.header)
                 setNotFound(false)
                 setBackground(image.default.src);     
             break;
             case "/coaching":
                 image = require('../Images/background/workingOnComputer.jpg')
+                setHeadline(data.careerCoaching.header)
                 setNotFound(false)
                 setBackground(image.default.src);     
             break;
             case "/workshops":
                 image = require('../Images/background/groupWorkspace.jpg')
+                setHeadline(data.workshops.header)
                 setNotFound(false)
                 setBackground(image.default.src);     
             break;
             case "/courses":
                 image = require('../Images/background/bookshelf.jpg')
+                setHeadline(data.onlineCourses.header)
                 setNotFound(false)
                 setBackground(image.default.src);     
             break;
@@ -74,7 +79,7 @@ const BaseLayout = ({ children }: any) => {
             :
             <div style={{position: "absolute", left:'0', top:'0', width: '100%', overflow:'hidden'}}> 
                 <Navbar />
-                <HeroImage background={background} />
+                <HeroImage background={background} title={headline} />
                 <main>{children}</main>
                 <ChatBot />
                 <Footer />
