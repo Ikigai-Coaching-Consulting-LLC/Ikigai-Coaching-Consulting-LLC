@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.div ` 
     width: 100%;
     height: 200px;
-    color: white;
+    color: black;
     position:absolute;
     top: 0;
     left:0;
@@ -50,7 +50,7 @@ export const Content = styled.div `
 export const TopNav = styled.div ` 
     font-size: 24px;
     button {
-        color: rgb(157, 157, 157);
+        color: rgb(50, 50, 50);
         :hover {
             color: rgb(100, 100, 100);
         }
@@ -63,11 +63,11 @@ export const BottomNav = styled.div `
 
     button {
         height: 100px;
-        color: rgb(230, 230, 230); 
+        color: rgb(0, 0, 0); 
        
         :hover {
-            color: rgb(157, 157, 157);
-            border-bottom: solid 2px lightgray;
+            color: rgb(100, 100, 100);
+            border-bottom: solid 2px lightblue;
         }
     }
 `

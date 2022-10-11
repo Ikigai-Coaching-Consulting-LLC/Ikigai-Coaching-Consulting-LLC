@@ -1,11 +1,15 @@
 import BaseLayout from '../Components/BaseLayout/BaseLayout'
+import GlobalStyles from '../styles/global.styles'
 
 
 function MyApp({ Component, pageProps }) {
   return (
-    <BaseLayout>
-      <Component {...pageProps} />
-    </BaseLayout>
+    <>
+      <BaseLayout>
+        <GlobalStyles />
+        <Component {...pageProps} />
+      </BaseLayout>
+    </>
   )
 }
 

@@ -24,6 +24,7 @@ const BaseLayout = ({ children }: any) => {
         switch(currentRoute) {
             case "/":
                 image = require('../Images/background/workspace.jpg')
+                setHeadline('')
                 setNotFound(false)
                 setBackground(image.default.src);      
             break;
@@ -79,7 +80,7 @@ const BaseLayout = ({ children }: any) => {
             :
             <div style={{position: "absolute", left:'0', top:'0', width: '100%', overflow:'hidden'}}> 
                 <Navbar />
-                <HeroImage background={background} title={headline} />
+                <HeroImage title={headline} />
                 <main>{children}</main>
                 <ChatBot />
                 <Footer />
