@@ -9,9 +9,9 @@ export const ChatBotDiv = styled.div<CBDiv>`
     right: 10px;
     bottom: 10px;
     background: ${props => props.chatBotState ? "#C4C3D0" : "transparent"};
-    height: ${props => props.chatBotState ? "300px" : "5%"};
-    width: ${props => props.chatBotState ? "200px" : "5%"};
-    transition: 0.3s;
+    height: ${props => props.chatBotState ? "300px" : ""};
+    width: ${props => props.chatBotState ? "200px" : ""};
+    transition: .4s ease-in-out;
     border-radius:  ${props => props.chatBotState ? "10px" : ""};
 `
 export const IconWrapper = styled.div<CBDiv> ` 
@@ -20,21 +20,36 @@ export const IconWrapper = styled.div<CBDiv> `
     border-radius:  ${props => props.chatBotState ? "5px 5px 0 0" : "50%"};
     padding: ${props => props.chatBotState ? "10px" : "20px"};
     background-color: "transparent";
+    cursor: pointer;
+
     &:hover {
-        background-color: ${props => props.chatBotState ? "#F6F2E8" : "#C4C3D0"};
+        background: ${props => props.chatBotState ? "rgba(250,250,250,.6)" : "rgba(100,100,100,.6)"};
     }
-    z-index: 99;
 `
-export const Content = styled.div ` 
-    display: grid;
+export const Content = styled.div<CBDiv> ` 
     justify-content: center;
     align-items: center;
+    display: ${props => props.chatBotState ? "grid" : "none"};
 
 `
 export const Title = styled.h3 ` 
-    font-size: 26px;
+    font-size: 18px;
+    width: 80%;
     margin: 10px auto;
-    margin-top: 50px;
     text-align: center;
+    
 
+`
+
+export const NavLink = styled.button `
+    border: none;
+    background: transparent;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(250,250,250,.6);
+    }
 `

@@ -1,8 +1,9 @@
+import Router from "next/router";
 import React from "react";
 import { useState, useEffect } from 'react';
 import { Icon } from "../Icon/Icon";
 
-import { ChatBotDiv, Title, Content, IconWrapper } from './ChatBot.style';
+import { ChatBotDiv, Title, Content, IconWrapper, NavLink } from './ChatBot.style';
 
 export const ChatBot = () => {
 
@@ -17,18 +18,23 @@ export const ChatBot = () => {
     //     return () => clearTimeout(chatBotTimer);
     // }, []);
 
-    const handleClick = () => {
-        setChatBotState(!chatBotState)
-        setButtonEnabled(!buttonDisabled);
+    const handleClick = (string?: string) => {
+        if(string){
+            Router.push(string)
+        } else {
+            setChatBotState(!chatBotState)
+            setButtonEnabled(!buttonDisabled);
+        }
     }
 
     return (
-        <ChatBotDiv chatBotState={chatBotState} onClick={handleClick}>
-            <IconWrapper chatBotState={chatBotState}>
-                <Icon chatBotState={chatBotState} setChatBotState={setChatBotState} buttonDisabled={buttonDisabled}/>
+        <ChatBotDiv chatBotState={chatBotState} >
+            <IconWrapper chatBotState={chatBotState} onClick={() => handleClick()}>
+                <Icon  chatBotState={chatBotState} setChatBotState={setChatBotState} buttonDisabled={buttonDisabled}/>
             </IconWrapper>
-            <Content>
+            <Content chatBotState={chatBotState}>
                 <Title>Celebrate your Career!</Title>
+                <NavLink onClick={() => handleClick('/contact')}>Contact Us!</NavLink>
             </Content>
             
         </ChatBotDiv>

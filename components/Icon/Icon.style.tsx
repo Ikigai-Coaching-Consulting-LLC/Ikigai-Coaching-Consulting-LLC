@@ -16,5 +16,6 @@ export const IconButton = styled.button<IconBtn>`
     background-color: transparent;
     border: none;
     margin: 0 auto;
+    z-index: -1;
 
 `
