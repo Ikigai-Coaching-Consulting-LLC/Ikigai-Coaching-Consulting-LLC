@@ -1,15 +1,28 @@
 
-import { Wrapper, Title } from './HeroImage.styles'
+import { Wrapper, Title, Content } from './HeroImage.styles'
 
 export interface HeroImageProps {
-    background?: string
-    title?: string
+    background: string
+    title: string
+    content?: string
+    styles?: string
 }
 
 const HeroImage = (props:HeroImageProps) => {
     return (
-        <Wrapper background={props.background}>
-            <Title>{props.title}</Title>
+        <Wrapper background={props.background} className={props.styles ? props.styles : ''} >         
+            <Content>
+                {props.content ? (
+                    <div>
+                        <Title>{props.title}</Title>
+                        <div>{props.content}</div>
+                    </div>
+                ) : (
+                    <div>
+
+                    </div>
+                )}
+            </Content>
         </Wrapper>
     )
 }

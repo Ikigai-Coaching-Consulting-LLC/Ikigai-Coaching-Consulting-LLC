@@ -20,54 +20,42 @@ const BaseLayout = ({ children }: any) => {
     }, [currentRoute])
 
     const settingBackground = (currentRoute:string) => {
+        setNotFound(false)
+        setHeadline('')
         let image
         switch(currentRoute) {
             case "/":
-                image = require('../Images/background/workspace.jpg')
-                setHeadline('')
-                setNotFound(false)
-                setBackground(image.default.src);      
+                image = require('../Images/background/ikigaiBackground.webp')
             break;
             case "/about":
-                image = require('../Images/background/passion.jpg')
+                image = require('../Images/background/plantBackground.jpg')
                 setHeadline(data.bio.header)
-                setNotFound(false)
-                setBackground(image.default.src);     
             break;
             case "/testimonial":
-                image = require('../Images/background/codingDeskImage.jpg')
-                setNotFound(false)
-                setBackground(image.default.src);    
+                image = require('../Images/background/sparkleBackground.jpg')
             break;
             case "/contact":
-                image = require('../Images/background/contactMe.jpg')
+                image = require('../Images/background/pyrimidBackground.jpg')
                 setHeadline(data.contact.header)
-                setNotFound(false)
-                setBackground(image.default.src);     
             break;
             case "/coaching":
-                image = require('../Images/background/workingOnComputer.jpg')
+                image = require('../Images/background/gradientBackground.jpg')
                 setHeadline(data.careerCoaching.header)
-                setNotFound(false)
-                setBackground(image.default.src);     
             break;
             case "/workshops":
-                image = require('../Images/background/groupWorkspace.jpg')
+                image = require('../Images/background/NettingBackground.jpg')
                 setHeadline(data.workshops.header)
-                setNotFound(false)
-                setBackground(image.default.src);     
             break;
             case "/courses":
-                image = require('../Images/background/bookshelf.jpg')
+                image = require('../Images/background/shadowBackground.jpg')
                 setHeadline(data.onlineCourses.header)
-                setNotFound(false)
-                setBackground(image.default.src);     
             break;
             case "/404":
                 setBackground('')
                 setNotFound(true);      
             break;
         }
+        setBackground(image.default.src);
     }
 
     return(
@@ -80,7 +68,7 @@ const BaseLayout = ({ children }: any) => {
             :
             <div style={{position: "absolute", left:'0', top:'0', width: '100%', overflow:'hidden'}}> 
                 <Navbar />
-                <HeroImage title={headline} />
+                <HeroImage background={background} title={headline}/>
                 <main>{children}</main>
                 <ChatBot />
                 <Footer />

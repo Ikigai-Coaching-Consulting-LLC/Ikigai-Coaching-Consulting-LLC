@@ -1,28 +1,31 @@
 import styled from 'styled-components'
-import Link from 'react'
 
 export const Wrapper = styled.div ` 
-    width: 100%;
-    height: 200px;
+    margin: 0 auto;
+    min-height: 60vh;
+    background: rgba(100, 100, 100, 0.6);
+    border-top: solid rgba(100, 100, 100, 1) .5px;
+  `
+  
+export const Nav = styled.div `
     background-color: transparent;
     display: grid;
-    grid-auto-flow: column;
-    padding: 10px 20px;
-    border-bottom: solid gray .5px;
-
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 `
 
 export const Header = styled.div `
-    position: absolute;
-    left: 10px; 
     display: grid;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    padding: 10px 20px;
 `
 
 export const Icon = styled.img ` 
-    
     height: 100px;
     width: 100px;
     border-radius: 25px;
@@ -35,36 +38,58 @@ export const Title = styled.h2 `
 
 `
 export const Content = styled.div `
-    position : absolute;
-    right: 10px;
     width: 100%;
-    margin: 0 20px;
+    min-height: 50px;
     display: grid;
-    justify-content: end;
-    justify-items: end;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr ;
     align-items: center;
-    
+    grid-auto-flow: column;
 
 `
 
-export const TopNav = styled.div ` 
+export const RightNav = styled.div ` 
     font-size: 24px;
+    padding: 10px 20px;
+    width: 300px;
+    display: grid;
+    justify-items: start;
 
 `
 
-export const BottomNav = styled.div `
+export const LeftNav = styled.div `
     font-size: 36px;
+    display: grid;
+    justify-items: start;
+    padding: 10px 20px;
 `
 
 export const NavLink = styled.button` 
     border: none;
     background-color: transparent;
-    color: gray;
     text-transform: capitalize;
-    margin: 0 10px;
     font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color :rgba( 250,248, 448, 1 );
     
     :hover {
         color: lightgray;
     }
+`
+export const Copy = styled.div ` 
+    font-size: 16px;
+    padding: 10px 20px;
+
+`
+
+export const CopyWriteBar = styled.div ` 
+    position: absolute;
+    bottom: 0; 
+    width: 100%auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    align-items: center;
+
 `

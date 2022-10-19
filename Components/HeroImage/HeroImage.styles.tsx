@@ -6,10 +6,9 @@ export interface Props {
 
 export const Wrapper = styled.div<Props> ` 
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     border: '1px solid black';
-    /* background: linear-gradient(90deg, rgba(0,0,0,0.4) 25%, rgba(0,0,0,0.8) 86.6%), url(${(props:Props) => props.background ? props.background: ''}), lightgrey; */
-    background: linear-gradient(112.6deg, rgba(200,200,200,1), rgba(250,250,250,1));
+    background: linear-gradient(90deg, rgba(240,240,240,0.2) 25%, rgba(240,240,240,0.2) 86.6%), url(${(props:Props) => props.background ? props.background: ''}), lightgrey;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,12 +16,21 @@ export const Wrapper = styled.div<Props> `
     display: grid;
     justify-content: center;
     align-items: center;
+
 `;
 
 export const Title = styled.h1 ` 
     color: black;
     font-size: 36px;
     margin-top: 200px;
+   
 
+
+`
+export const Content = styled.div ` 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
 
 `
