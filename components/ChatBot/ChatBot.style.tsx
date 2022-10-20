@@ -26,6 +26,7 @@ export const IconWrapper = styled.div<CBDiv> `
     &:hover {
         background: ${props => props.chatBotState ? "rgba(250,250,250,.6)" : "rgba(100,100,100,.6)"};
     }
+    
 `
 export const Content = styled.div<CBDiv> ` 
     justify-content: center;

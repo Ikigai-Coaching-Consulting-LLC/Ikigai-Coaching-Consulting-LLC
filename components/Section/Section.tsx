@@ -1,4 +1,4 @@
-import { Card, CardTitle, CardBody, Wrapper, Grid } from "./Section.styles";
+import { Card, CardTitle, CardBody, Wrapper, Grid, Content } from "./Section.styles";
 
 interface SectionProps {
     header?: string,
@@ -31,8 +31,10 @@ export const Section = (props: SectionProps) => {
                         )
                     })}
                 </Grid>
-            }   
-            {props.children && <>{props.children}</>}
+            }
+            <Content>   
+                {props.children && <>{props.children}</>}
+            </Content>
         </Wrapper>
     )
 }

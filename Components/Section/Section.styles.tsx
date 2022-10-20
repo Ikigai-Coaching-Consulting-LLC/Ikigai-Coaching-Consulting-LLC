@@ -9,6 +9,14 @@ export const Wrapper = styled.div `
     align-items: center;
 
 `
+
+export const Content = styled.div ` 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+
+`
 export const Card = styled.div ` 
     width: 450px;
     border: solid 1px black;
