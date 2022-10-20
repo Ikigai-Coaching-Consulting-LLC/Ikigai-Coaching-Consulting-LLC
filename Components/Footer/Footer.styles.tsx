@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div ` 
     margin: 0 auto;
+    width: 100%;
     min-height: 60vh;
     background: rgba(100, 100, 100, 0.6);
     border-top: solid rgba(100, 100, 100, 1) .5px;
@@ -40,6 +41,7 @@ export const Title = styled.h2 `
 export const Content = styled.div `
     width: 100%;
     min-height: 50px;
+    padding-top: 50px;
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr ;
@@ -86,9 +88,8 @@ export const Copy = styled.div `
 export const CopyWriteBar = styled.div ` 
     position: absolute;
     bottom: 0; 
-    width: 100%auto;
+    width: 100%;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
     justify-content: center;
     align-items: center;
 

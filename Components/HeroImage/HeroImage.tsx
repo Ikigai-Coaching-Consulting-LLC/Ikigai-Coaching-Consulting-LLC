@@ -19,7 +19,7 @@ const HeroImage = (props:HeroImageProps) => {
                     </div>
                 ) : (
                     <div>
-
+                        <Title>{props.title}</Title>
                     </div>
                 )}
             </Content>

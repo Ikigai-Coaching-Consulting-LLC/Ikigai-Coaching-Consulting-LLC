@@ -13,11 +13,12 @@ export const ChatBotDiv = styled.div<CBDiv>`
     width: ${props => props.chatBotState ? "200px" : ""};
     transition: .4s ease-in-out;
     border-radius:  ${props => props.chatBotState ? "10px" : ""};
+    z-index: 1;
 `
 export const IconWrapper = styled.div<CBDiv> ` 
     display: grid;
     justify-content: center;
-    border-radius:  ${props => props.chatBotState ? "5px 5px 0 0" : "50%"};
+    border-radius:  ${props => props.chatBotState ? "5px 5px 0 0" : "25%"};
     padding: ${props => props.chatBotState ? "10px" : "20px"};
     background-color: "transparent";
     cursor: pointer;
@@ -28,7 +29,8 @@ export const IconWrapper = styled.div<CBDiv> `
 `
 export const Content = styled.div<CBDiv> ` 
     justify-content: center;
-    align-items: center;
+    align-items: 'center';
+    height: 100%;
     display: ${props => props.chatBotState ? "grid" : "none"};
 
 `
@@ -37,16 +39,18 @@ export const Title = styled.h3 `
     width: 80%;
     margin: 10px auto;
     text-align: center;
-    
 
 `
 
 export const NavLink = styled.button `
     border: none;
     background: transparent;
-    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
     width: 100%;
+    height: 50px;
     text-align: center;
+    vertical-align: middle;
     cursor: pointer;
 
     &:hover {

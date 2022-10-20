@@ -1,6 +1,7 @@
 import Router from "next/router";
 import React from "react";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+
 import { Icon } from "../Icon/Icon";
 
 import { ChatBotDiv, Title, Content, IconWrapper, NavLink } from './ChatBot.style';
@@ -33,10 +34,9 @@ export const ChatBot = () => {
                 <Icon  chatBotState={chatBotState} setChatBotState={setChatBotState} buttonDisabled={buttonDisabled}/>
             </IconWrapper>
             <Content chatBotState={chatBotState}>
-                <Title>Celebrate your Career!</Title>
+                <Title>It's time to get out of your paralysis by analysis and into a thriving career!</Title>
                 <NavLink onClick={() => handleClick('/contact')}>Contact Us!</NavLink>
             </Content>
-            
         </ChatBotDiv>
     )
 }

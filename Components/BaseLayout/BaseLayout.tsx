@@ -51,11 +51,13 @@ const BaseLayout = ({ children }: any) => {
                 setHeadline(data.onlineCourses.header)
             break;
             case "/404":
-                setBackground('')
+                image = null
                 setNotFound(true);      
             break;
         }
-        setBackground(image.default.src);
+        if(image){
+            setBackground(image.default.src);
+        }
     }
 
     return(
@@ -63,7 +65,7 @@ const BaseLayout = ({ children }: any) => {
             <Section>
                 <main>{children}
                 </main>
-                <NavLink onClick={() => router.push('/')}>Home</NavLink>
+                <NavLink style={{color: "black"}}onClick={() => router.push('/')}>Home</NavLink>
             </Section>
             :
             <div style={{position: "absolute", left:'0', top:'0', width: '100%', overflow:'hidden'}}> 

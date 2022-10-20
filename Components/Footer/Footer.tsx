@@ -46,9 +46,7 @@ const Footer = () => {
             </Content>
             <Content>
                 <CopyWriteBar>
-                    <Content>&copy;Ikigai Coaching & Consulting, LLC</Content>
                      <Copy>&copy;Ikigai Coaching & Consulting, LLC</Copy>
-                     <Content>&copy;Ikigai Coaching & Consulting, LLCs</Content>
                 </CopyWriteBar>
             </Content>
         </Wrapper>
