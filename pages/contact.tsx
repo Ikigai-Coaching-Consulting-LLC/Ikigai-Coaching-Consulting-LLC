@@ -12,7 +12,7 @@ const contactData:Contact = data.contact;
 const ContactPage = () => {
     return (
         <Wrapper>
-            <Section header={contactData.header}>
+            <Section >
                 <ContactForm />
             </Section>
         </Wrapper>

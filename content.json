@@ -4,11 +4,13 @@
         "content": "Several years ago, I landed in career development after applying for a role as a career development trainer. What drew me to the field was being able to help people in need by giving them a better chance of landing a job to support their families. I couldn’t have joined a better field because my heart has always been focused on helping others with passion and resilience. Now, I am the Founder and CEO of Ikigai Career Coaching & Consulting, LLC, and I hold certifications in Career Coaching, Resume Writing, and Professional Interview Prep. I have also achieved a Bachelor’s Degree in Communication from Purdue University and a Master’s Degree in Education from Liberty University. I was born in Houston, TX but I have lived all over the world including Japan, Hong Kong, Canada, and across the United States. As your Career Coach and consultant, I will be your accountability partner and cheerleader. My goal is to propel you forward to reach career success—whether you are seeking new employment, have recently graduated, or are transitioning careers into any industry, we will work together to find your next job. During our sessions, I will lead you in clarifying your career purpose and goals while providing a strategic roadmap with a targeted action plan to help you reach fulfilling results. \"Ikigai\" (ee-key-guy) is a Japanese concept that combines life and worth, helping you to identify what you truly value. Many of my clients are also searching for a more sustainable balance between their professional and personal life by identifying their innate talents and using those to find a role that drives success. I offer strategies and support to my clients facing career challenges using proven and successful job search techniques and resources. I pride myself in building rapport and trust with my clients through honest feedback, an optimistic outlook, and business acumen. My goal is to coach clients to the point that they can successfully navigate their own job search and avoid roadblocks if they need to seek employment again in the future. I offer multiple career coaching packages and group programs, along with workshops and online courses. If you’re ready to take the next step, feel free to explore the services I offer or contact me. Let’s get started!"
     },
     "contact": {
-        "header": "Thank you for your interest in my services! Please reach out to me or set up an appointment using the tools below."
+        "header":"Contact Us", 
+        "subHeader":"Thank you for your interest in my services! Please reach out to me or set up an appointment using the tools below."
     },
     "careerCoaching": {
-        "header": "Unlock your potential through personal career coaching.",
-        "subHeader": "My coaching sessions are designed to help you establish and achieve career goals that make the most of your skills and experience. Whether you prefer to meet with me one-on-one or as part of a group, I will help guide you through the process of finding your next job.",
+        "header": "Career Coaching", 
+        "subHeader": "Unlock your potential through personal career coaching.",
+        "CoachingDetail": "My coaching sessions are designed to help you establish and achieve career goals that make the most of your skills and experience. Whether you prefer to meet with me one-on-one or as part of a group, I will help guide you through the process of finding your next job.",
         "typesOfCoaching": [
             {
                 "coaching": "One-on-One Career Coaching with Accountability",
@@ -32,8 +34,9 @@
         ]
     },
     "workshops": {
-        "header": "Expand your knowledge and resources through workshops.",
-        "subHeader": "I host workshops for those that are interested in learning how to improve job search techniques and exploring different career paths. These workshops focus on specific elements of the job search process, from discovering what sort of career fits you best to landing a job offer. Currently, I offer the following workshops:",
+        "header": "Workshops",
+        "subHeader": "Expand your knowledge and resources through workshops.",
+        "workShopDetails": "I host workshops for those that are interested in learning how to improve job search techniques and exploring different career paths. These workshops focus on specific elements of the job search process, from discovering what sort of career fits you best to landing a job offer. Currently, I offer the following workshops:",
         "typesOfWorkshops": [
             "Career Clarity & Exploration",
             "Jump Start Your Job Search",
@@ -43,8 +46,9 @@
         ]
     },
     "onlineCourses": {
-        "header": "Discover job search strategies through the convenience of online learning.",
-        "subHeader": "These online courses provide you with the opportunity to learn and develop your strategies and abilities in an easily digestible and affordable way.",
+        "header": "Online Courses",
+        "subHeader": "Discover job search strategies through the convenience of online learning",
+        "courseDetails": "These online courses provide you with the opportunity to learn and develop your strategies and abilities in an easily digestible and affordable way.",
         "typesOfCourses": [
             {
                 "course": "Behavioral Interviewing That Lands Jobs",
@@ -64,5 +68,7 @@
             }
         ]
     },
-    "testimonials": {}
+    "testimonials": {
+        "header": "Testimonials"        
+    }
 }

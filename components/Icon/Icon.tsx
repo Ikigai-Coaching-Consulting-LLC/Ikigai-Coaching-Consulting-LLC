@@ -12,7 +12,7 @@ interface IconProps {
 export const Icon: React.FC<IconProps> = ({ chatBotState, setChatBotState, buttonDisabled }) => {
     return (
         <IconButton chatBotState={chatBotState} onClick={() => setChatBotState(!chatBotState)} disabled={buttonDisabled}>
-            <IconContext.Provider value={{ color: "white" }}>
+            <IconContext.Provider value={{ color: "black" }}>
                 {chatBotState ? <FaChevronDown/> : <FaChevronUp/>}
             </IconContext.Provider>
         </IconButton>

@@ -7,14 +7,14 @@ const Navbar = () => {
 
     const router = useRouter()
 
-    const handleRouting = (route) => {
+    const handleRouting = (route:string) => {
         router.push(route)
     } 
 
     return (
         <Wrapper>
             <Header>
-                <Icon src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/qp8rxi2jae4uinry2dv7"/>
+                <Icon src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/qp8rxi2jae4uinry2dv7" onClick={()=> handleRouting('/')}/>
                 <Title>Ikigai Coaching & Consulting, LLC</Title>
             </Header>
             <Content>
@@ -30,7 +30,7 @@ const Navbar = () => {
                     </NavLink>
                 </TopNav>
                 <BottomNav>
-                    <NavLink className="big" onClick={()=> handleRouting('/coaching')}>
+                    <NavLink onClick={()=> handleRouting('/coaching')}>
                         Career Coaching
                     </NavLink>
                     <NavLink onClick={()=> handleRouting('/workshops')}>

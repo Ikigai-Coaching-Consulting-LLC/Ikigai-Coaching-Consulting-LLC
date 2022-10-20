@@ -1,33 +1,40 @@
-import React from "react";
+import { Card, CardTitle, CardBody, Wrapper, Grid, Content } from "./Section.styles";
 
 interface SectionProps {
     header?: string,
     subHeader?: string,
-    typesOfCourses?: TypesOf[],
-    typesOfWorkshops?: string[],
+    typesOf?: any[],
     children?: React.ReactNode
 }
 
-interface TypesOf {
-    course?: string,
-    description?: string
-}
 
 export const Section = (props: SectionProps) => {
+
+    const data = props.typesOf
     return (
-        <>
+        <Wrapper>
             <h1>{props.header}</h1>
-            {props.typesOfCourses?.map((object, index) => {
-                return (
-                    <div key={index}>{object.course}:
-                        {object.description}
-                    </div>
-                )
-            })}
-            {props.typesOfWorkshops?.map((workshop, index) => {
-                return <div key={index}>{workshop}</div>
-            })}
-            {props.children && <>{props.children}</>}
-        </>
+            {data?.length &&
+                <Grid>
+                    {data?.map((object:any, index:any) => {
+                        if(typeof object === 'string'){
+                            return(
+                                <div key={index}>{object}
+                                </div>
+                            )
+                        }
+                        return (
+                            <Card key={index}>
+                                <CardTitle>{object.course}:</CardTitle>
+                                <CardBody>{object.description}</CardBody>
+                            </Card>
+                        )
+                    })}
+                </Grid>
+            }
+            <Content>   
+                {props.children && <>{props.children}</>}
+            </Content>
+        </Wrapper>
     )
 }
